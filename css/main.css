@@ -1,0 +1,398 @@
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap');
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Montserrat", sans-serif;
+        scrollbar-color: #e9a13d black;
+        caret-color: #e9a13d;
+    }
+
+    body {
+        max-width: 1440px;
+        margin: 0 auto;
+        margin-top: 30px;
+        margin-bottom: 100px;
+        scroll-behavior: smooth;
+    }
+
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: #111111;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    button {
+        cursor: pointer;
+    }
+
+    /* Header Start */
+    .header {
+        display: flex;
+        height: 54px;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        background-color: white;
+    }
+
+    .header__nav {
+        display: flex;
+        padding: 1rem 2rem;
+        max-width: 1440px;
+    }
+
+    .header__logo {
+        width: 257px;
+        height: 54px;
+    }
+
+    .header__ul a {
+        text-decoration: none;
+        color: #131d3b;
+        font-size: 16px;
+    }
+
+    .header__list__item {
+        list-style: none;
+    }
+
+    .header__list__item:hover {
+        border-bottom: 5px solid #e9a13d;
+        padding-bottom: 20px;
+    }
+
+    .header__ul {
+        display: flex;
+        width: 568px;
+        height: 20px;
+        justify-content: space-between;
+    }
+
+    .header__toggle {
+        display: none;
+        border: none;
+        background: none;
+        font-size: 32px;
+        cursor: pointer;
+    }
+
+    /* Header End */
+
+    /* Main Start */
+    .galleriets__butikker {
+        background-color: #e9a13d;
+        max-width: 1440px;
+        min-height: 530px;
+    }
+
+    .butikker__h1 {
+        font-size: 42px;
+        text-align: center;
+        padding-top: 60px;
+        padding-bottom: 40px;
+    }
+
+    .butik__loger {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        gap: 1rem;
+        max-width: 1200px;
+        margin: auto;
+        align-items: stretch;
+    }
+
+    /* Popup Start */
+    .open__popup {
+        border: none;
+        background: none;
+        background-color: #f2f3f5;
+        width: 205px;
+        height: 230px;
+    }
+
+    .open__popup:hover {
+        cursor: pointer;
+    }
+
+
+    .popup_window {
+        background-color: white;
+        max-width: 948px;
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        /* align-self: center; */
+        justify-self: center;
+        margin-top: 100px;
+        opacity: 0;
+        transform: scaleX(0);
+        border: none;
+    }
+
+    .popup_window:popover-open {
+        opacity: 1;
+        transform: scaleX(1);
+    }
+
+    @starting-style {
+        .popup_window:popover-open {
+            opacity: 0;
+            transform: scaleX(0);
+        }
+    }
+
+    /* .popup_window::backdrop {
+        background-color: transparent;
+    } */
+
+    .popup_window:popover-open::backdrop {
+        background-color: rgb(0 0 0 / 50%);
+    }
+
+    /* @starting-style {
+        .popup_window:popover-open::backdrop {
+            background-color: transparent;
+        }
+    } */
+
+    .close__popup {
+        width: 20px;
+        align-self: flex-end;
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+
+    .popup__content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .popup__logo {
+        width: 200px;
+        margin-bottom: 30px;
+        align-self: center;
+        /* margin: 30px auto; */
+    }
+
+    .popup__h2 {
+        font-size: 36px;
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+
+    .popup__p {
+        font-size: 18px;
+        max-width: 794px;
+    }
+
+    /* Popup End */
+
+    /* Main End */
+
+    /* Footer Start */
+
+    .footer {
+        max-width: 1440px;
+        height: 400px;
+        background-color: #ededed;
+        padding: 80px 30px;
+    }
+
+    .footer__galleriet {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 120px;
+    }
+
+    .footer__logo {
+        max-width: 438px;
+        height: 92px;
+        margin-bottom: 20px;
+    }
+
+    .footer__info {
+        margin: auto;
+    }
+
+    .footer__contact {
+        margin-top: 30px;
+        position: relative;
+    }
+
+
+    .footer__info .adress {
+        font-size: 16px;
+        line-height: 32px;
+    }
+
+    .footer__info .contact_info {
+        font-size: 14px;
+        margin-top: 70px;
+        line-height: 22px;
+    }
+
+    .contact_info .email {
+        margin-left: 20px;
+    }
+
+    .footer__contact .footer__list__item {
+        list-style: none;
+        font-size: 15px;
+        line-height: 28px;
+    }
+
+    .kontakt__btn {
+        background-color: #e9a13d;
+        color: #111111;
+        width: 121px;
+        height: 38px;
+        font-size: 15px;
+        font-weight: 500;
+        margin-top: 16px;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .arrow {
+        width: 52px;
+        height: 52px;
+        background-color: #e9a13d;
+        /* border: none; */
+        border-radius: 50px;
+        /* margin-left: 500px; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        right: 80px;
+        bottom: 120px;
+    }
+
+    .arrow img {
+        width: 24px;
+    }
+
+    .design_lab {
+        font-size: 12px;
+        display: flex;
+        justify-content: end;
+        margin-right: 80px;
+        margin-top: 90px;
+    }
+
+    /* Footer End */
+
+    /* Telefon Start */
+    @media (max-width: 500px) {
+        .header__toggle {
+            display: block;
+        }
+
+        .header__list__item:hover {
+            border-bottom: 3px solid #e9a13d;
+            padding-bottom: 1px;
+        }
+
+        .header__ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            right: 0;
+            flex-direction: column;
+            background-color: white;
+            border-bottom-left-radius: 30px;
+            height: 8em;
+            max-width: 6em;
+            font-size: 20px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .header__ul--open {
+            display: flex;
+        }
+
+        .galleriets__butikker {
+            min-height: 360px;
+            max-width: 400px;
+            padding-bottom: 40px;
+        }
+
+        .butikker__h1 {
+            font-size: 25px;
+            padding-top: 40px;
+        }
+
+        .open__popup {
+            width: 100px;
+            height: 110px;
+            margin: auto;
+        }
+
+        .footer {
+            max-width: 400px;
+            height: 350px;
+            margin: auto;
+            padding: 40px 50px;
+        }
+
+        .footer__galleriet {
+            display: block;
+        }
+
+        .footer__logo {
+            max-width: 215px;
+            height: 45px;
+        }
+
+        .footer__info .contact_info {
+            display: flex;
+            flex-direction: column;
+            margin-top: 30px;
+        }
+
+        .contact_info .email {
+            margin-left: 0;
+        }
+
+        .footer__ul {
+            display: none;
+        }
+
+        .kontakt__btn {
+            display: none;
+        }
+
+        .arrow {
+            bottom: 165px;
+            right: 0;
+            width: 36px;
+            height: 36px;
+        }
+
+        .arrow img {
+            width: 16px;
+        }
+
+        .design_lab {
+            display: block;
+            margin-top: 60px;
+        }
+    }

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halloween i Galleriet</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/oplevelser.css">
+    <script src="js/disable-products.js" defer></script>
+    <script src="js/main.js" defer></script>
+</head>
+
+<body id="up">
+    <header class="header">
+        <a href="home.html"><img src="img/galleriet.svg" alt="Galleret logo" class="header__logo"></a>
+        <nav class="header__nav">
+            <button class="header__toggle" type="button" aria-label="Ådn eller luk navigationen"
+                aria-expanded="false">☰</button>
+            <ul class="header__ul">
+                <li class="header__list__item"><a href="home.html">Hjem</a></li>
+                <li class="header__list__item"><a href="oplevelser.html">Oplevelser</a></li>
+                <li class="header__list__item"><a href="mine-tilbud.html">Mine tilbud</a></li>
+                <li class="header__list__item"><a href="kontakt.html">Kontakt</a></li>
+                <li class="header__list__item"><a href="faq.html">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="hero">
+            <h1 class="hero__h1">Bestil dine oplevelser her</h1>
+        </section>
+
+        <article class="packages">
+            <section class="package silver">
+                <h2 class="package__h2">Sølv pakken</h2>
+                <h3 class="package__h3">Indenholder:</h3>
+                <ul class="package__ul">
+                    <li class="package__list__item">En billet til korsbæk Bio</li>
+                    <li class="package__list__item">Guf for 100 kr. i Slikhytten</li>
+                    <li class="package__list__item">En billet til Korsbæk Svømmebad</li>
+                </ul>
+                <p class="package__price">Pris: 250 DKK <span class="package__discount">Spar 10%</span></p>
+                <form action="mine-tilbud.html">
+                    <input type="hidden" name="package" value="silver">
+                    <button id="btn-silver" class="cta">VIEW MORE</button>
+                </form>
+            </section>
+
+            <section class="package gold">
+                <h2 class="package__h2">Guld pakken</h2>
+                <h3 class="package__h3">Indenholder:</h3>
+                <ul class="package__ul">
+                    <li class="package__list__item">To billetter til korsbæk Bio</li>
+                    <li class="package__list__item">Guf for 250 kr. i Slikhytten</li>
+                    <li class="package__list__item">To billetter til Korsbæk Svømmebad</li>
+                </ul>
+                <p class="package__price">Pris: 500 DKK <span class="package__discount">Spar 15%</span></p>
+                <form action="mine-tilbud.html">
+                    <input type="hidden" name="package" value="gold">
+                    <button id="btn-gold" class="cta">VIEW MORE</button>
+                </form>
+            </section>
+
+            <section class="package platin">
+                <h2 class="package__h2">Platin pakken</h2>
+                <h3 class="package__h3">Indenholder:</h3>
+                <ul class="package__ul">
+                    <li class="package__list__item">Fire billetter til korsbæk Bio</li>
+                    <li class="package__list__item">Guf for 500 kr. i Slikhytten</li>
+                    <li class="package__list__item">Fire billetter til Korsbæk Svømmebad</li>
+                </ul>
+                <p class="package__price">Pris: 900 DKK <span class="package__discount">Spar 25%</span></p>
+                <form action="mine-tilbud.html">
+                    <input type="hidden" name="package" value="platin">
+                    <button id="btn-platin" class="cta">VIEW MORE</button>
+                </form>
+            </section>
+        </article>
+
+        <section class="galleriets__butikker">
+            <h1 class="butikker__h1">Galleriets butikker</h1>
+            <div class="butik__loger">
+                <button class="open__popup" popovertarget="foetex">
+                    <img src="img/foetex.png" alt="Foetex logo" class="butik_logo">
+                </button>
+
+                <button class="open__popup" popovertarget="normal">
+                    <img src="img/Normal.svg" alt="Normal logo" class="butik_logo">
+                </button>
+
+                <button class="open__popup" popovertarget="slikhytten">
+                    <img src="img/slikyhtten-logo.png" alt="Slikhytten logo" class="butik_logo">
+                </button>
+
+                <button class="open__popup" popovertarget="korsbaekbio">
+                    <img src="img/korsbaekbio.png" alt="Korsbaekbio logo" class="butik_logo">
+                </button>
+
+                <button class="open__popup" popovertarget="korsbaeksvoemmehal">
+                    <img src="img/korsbaeksvoemmehal.svg" alt="Korsbaeksvoemmehal logo" class="butik_logo">
+                </button>
+
+                <!-- Popup bokses -->
+                <dialog class="popup_window" id="foetex" popover>
+                    <button class="close__popup" id="closePopup" popovertarget="foetex">
+                        <img src="img/×.png" alt="x">
+                    </button>
+
+                    <section class="popup__content">
+                        <img src="img/foetex.png" alt="Foetex logo" class="popup__logo">
+                        <h2 class="popup__h2">Føtex</h2>
+                        <p class="popup__p">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias, maiores sit?
+                            Perspiciatis
+                            facere quaerat incidunt numquam culpa assumenda vero perferendis
+                            reprehenderit minima odio quisquam magnam omnis excepturi, praesentium ipsum,
+                            ex, reiciendis cupiditate corrupti?
+                        </p>
+                    </section>
+                </dialog>
+
+                <dialog class="popup_window" id="normal" popover>
+                    <button class="close__popup" id="closePopup" popovertarget="normal">
+                        <img src="img/×.png" alt="x">
+                    </button>
+
+                    <section class="popup__content">
+                        <img src="img/Normal.svg" alt="Normal logo" class="popup__logo">
+                        <h2 class="popup__h2">Normal</h2>
+                        <p class="popup__p">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias, maiores sit?
+                            Perspiciatis
+                            facere quaerat incidunt numquam culpa assumenda vero perferendis
+                            reprehenderit minima odio quisquam magnam omnis excepturi, praesentium ipsum,
+                            ex, reiciendis cupiditate corrupti?
+                        </p>
+                    </section>
+                </dialog>
+
+                <dialog class="popup_window" id="slikhytten" popover>
+                    <button class="close__popup" id="closePopup" popovertarget="slikhytten">
+                        <img src="img/×.png" alt="x">
+                    </button>
+
+                    <section class="popup__content">
+                        <img src="img/slikyhtten-logo.png" alt="Slikhytten logo" class="popup__logo">
+                        <h2 class="popup__h2">Slikhytten</h2>
+                        <p class="popup__p">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias, maiores sit?
+                            Perspiciatis
+                            facere quaerat incidunt numquam culpa assumenda vero perferendis
+                            reprehenderit minima odio quisquam magnam omnis excepturi, praesentium ipsum,
+                            ex, reiciendis cupiditate corrupti?
+                        </p>
+                    </section>
+                </dialog>
+
+                <dialog class="popup_window" id="korsbaekbio" popover>
+                    <button class="close__popup" id="closePopup" popovertarget="korsbaekbio">
+                        <img src="img/×.png" alt="x">
+                    </button>
+
+                    <section class="popup__content">
+                        <img src="img/korsbaekbio.png" alt="Korsbaekbio logo" class="popup__logo">
+                        <h2 class="popup__h2">Korsbæks lokale biograf</h2>
+                        <p class="popup__p">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias, maiores sit?
+                            Perspiciatis
+                            facere quaerat incidunt numquam culpa assumenda vero perferendis
+                            reprehenderit minima odio quisquam magnam omnis excepturi, praesentium ipsum,
+                            ex, reiciendis cupiditate corrupti?
+                        </p>
+                    </section>
+                </dialog>
+
+                <dialog class="popup_window" id="korsbaeksvoemmehal" popover>
+                    <button class="close__popup" id="closePopup" popovertarget="korsbaeksvoemmehal">
+                        <img src="img/×.png" alt="x">
+                    </button>
+
+                    <section class="popup__content">
+                        <img src="img/korsbaeksvoemmehal.svg" alt="Korsbaeksvoemmehal logo" class="popup__logo">
+                        <h2 class="popup__h2">Korsbæk Svømmehal</h2>
+                        <p class="popup__p">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias, maiores sit?
+                            Perspiciatis
+                            facere quaerat incidunt numquam culpa assumenda vero perferendis
+                            reprehenderit minima odio quisquam magnam omnis excepturi, praesentium ipsum,
+                            ex, reiciendis cupiditate corrupti?
+                        </p>
+                    </section>
+                </dialog>
+            </div>
+
+
+        </section>
+    </main>
+
+    <footer class="footer">
+        <article class="footer__galleriet">
+            <div class="footer__info">
+                <img src="img/galleriet.svg" alt="Galleriet logo" class="footer__logo">
+                <p class="adress">Galleristrædet 1</p>
+                <p class="adress">4021 Korsbæk</p>
+                <p class="contact_info">+45 2143 6587 <span class="email">hej@galleriet-korsbaek.com</span></p>
+            </div>
+            <div class="footer__contact">
+                <ul class="footer__ul">
+                    <li class="footer__list__item">
+                        <p>About</p>
+                    </li>
+                    <li class="footer__list__item">
+                        <p>Services</p>
+                    </li>
+                    <li class="footer__list__item">
+                        <p>Contact</p>
+                    </li>
+                </ul>
+                <a href="kontakt.html" class="kontakt__btn">Kontakt os</a>
+                <p class="design_lab">© 2021 Armadillo Design Lab.</p>
+                <a href="#up" class="arrow"><img src="img/arrow-up-solid.png" alt="arrow"></a>
+        </article>
+    </footer>
+
+</body>
+
+</html>

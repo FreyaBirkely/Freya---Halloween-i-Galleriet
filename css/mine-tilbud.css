@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap');
+
+.hero {
+    background-image: url(../img/halloween_background.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 300px;
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero__h1 {
+    font-size: 65px;
+    text-align: center;
+    font-family: "Creepster", system-ui;
+    color: #232323;
+}
+
+.tilbud {
+    max-width: 750px;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.tilbud__h2 {
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+.tilbud__table {
+    border-collapse: collapse;
+    max-width: fit-content;
+}
+
+.tilbud__row {
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+}
+
+.tilbud__ticket {
+    font-size: 15px;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    margin-bottom: 25px;
+    width: fit-content auto;
+    padding: 12px 10px;
+}
+
+.redeem {
+    font-size: 19px;
+    font-weight: 500;
+    background-color: #e9a13d;
+    padding: 10px 30px;
+    border: none;
+    margin-left: 25px;
+}
+
+.delete_storage {
+    font-size: 19px;
+    border: 2px solid #e9a13d;
+    background-color: white;
+    padding: 10px 15px;
+}
+
+@media(max-width: 500px) {
+    .hero {
+        background-position: center;
+        height: 120px;
+        max-width: 400px;
+    }
+
+    .hero__h1 {
+        font-size: 25px;
+
+    }
+
+    .tilbud {
+        max-width: 350px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .tilbud__h2 {
+        font-size: 25px;
+        margin-bottom: 30px;
+    }
+
+    .tilbud__ticket {
+        margin-bottom: 15px;
+        padding: 10px;
+    }
+
+    .redeem {
+        font-size: 15px;
+        padding: 11px 20px;
+        margin-left: 15px;
+    }
+
+    .delete_storage {
+        font-size: 15px;
+        padding: 15px 34px;
+        width: 350px;
+    }
+}

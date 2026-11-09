@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap');
+
+.hero {
+    background-image: url(../img/halloween_background.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 700px;
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero__h1 {
+    font-size: 100px;
+    text-align: center;
+    font-family: "Creepster", system-ui;
+    color: #232323;
+}
+
+.hero__h2 {
+    font-size: 40px;
+    text-align: center;
+    color: #232323;
+}
+
+.tilbud__info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* grid-template-columns: 1fr 1fr; */
+    gap: 40px;
+    max-width: 960px;
+    /* height: 411px; */
+    margin: 80px auto;
+}
+
+/* .tilbud {
+    width: 470px;
+} */
+
+.tilbud__h3,
+.tilbud__h4 {
+    font-size: 36px;
+    font-weight: 550;
+    margin-bottom: 27px;
+}
+
+.tilbud__p {
+    font-size: 18px;
+    line-height: 32px;
+    padding-bottom: 70px;
+}
+
+.se_tilbud {
+    text-decoration: none;
+    color: #b47575;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+
+@media(max-width: 500px) {
+    .hero {
+        background-position: center;
+        background-size: 700px;
+        height: 360px;
+        max-width: 400px;
+    }
+
+    .hero__h1 {
+        font-size: 50px;
+    }
+
+    .hero__h2 {
+        font-size: 20px;
+    }
+
+    .tilbud__info {
+        display: block;
+        max-width: 400px;
+        height: 800px;
+    }
+
+    .tilbud {
+        max-width: 330px;
+        margin: auto;
+    }
+
+    .tilbud__h3,
+    .tilbud__h4 {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    .tilbud__p {
+        font-size: 14px;
+        line-height: 30px;
+        padding-bottom: 30px;
+    }
+
+    .se_tilbud {
+        font-size: 14px;
+    }
+}
